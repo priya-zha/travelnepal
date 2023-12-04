@@ -3,158 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Travel Escape</title>
+    <title>Your Travel Company</title>
     <style>
         body {
             margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-            background: url('https://source.unsplash.com/1920x1080/?travel') center/cover no-repeat;
-            color: #fff;
+            font-family: Arial, sans-serif;
         }
 
         header {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 20px;
+            background: #333;
+            color: #fff;
             text-align: center;
+            padding: 1em 0;
         }
 
         nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 10px;
+            background: #444;
+            color: #fff;
+            padding: 0.5em;
         }
 
         nav a {
-            text-decoration: none;
             color: #fff;
-            font-weight: bold;
-            font-size: 18px;
-            transition: color 0.3s ease;
-        }
-
-        nav a:hover {
-            color: #ffd700;
-        }
-
-        .hero-section {
-            text-align: center;
-            padding: 50px;
-        }
-
-        .hero-section h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-        }
-
-        .hero-section p {
-            font-size: 1.5em;
-            margin-bottom: 30px;
-        }
-
-        .cta-button {
-            display: inline-block;
-            padding: 15px 30px;
-            background-color: #ffd700;
-            color: #333;
             text-decoration: none;
-            border-radius: 10px;
-            font-weight: bold;
-            font-size: 1.2em;
-            transition: background-color 0.3s ease;
+            padding: 1em;
+            display: inline-block;
         }
 
-        .cta-button:hover {
-            background-color: #ffcc00;
-        }
-
-        .gallery-section {
-            text-align: center;
-            padding: 50px;
-        }
-
-        .gallery-image {
-            width: 100%;
-            max-width: 400px;
-            margin: 10px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        }
-
-        .video-section {
-            text-align: center;
-            padding: 50px;
-        }
-
-        #youtube-video {
-            width: 100%;
-         
-        }
-
-        .map-section {
-            text-align: center;
-            padding: 50px;
-        }
-
-        #google-map {
-            width: 100%;
-
-            height: 400px;
+        section {
+            padding: 2em;
         }
 
         footer {
-            background-color: rgba(0, 0, 0, 0.7);
+            background: #333;
             color: #fff;
             text-align: center;
-            padding: 20px;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>Your Travel Escape</h1>
+        <h1>Your Travel Company</h1>
     </header>
 
     <nav>
-        <a href="#hero">Home</a>
-        <a href="#gallery">Destinations</a>
-        <a href="#video">Packages</a>
-        <a href="#map">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
     </nav>
 
-    <div id="hero" class="hero-section">
-        <h1>Embark on Your Dream Journey</h1>
-        <p>Discover the world's wonders with our curated travel experiences.</p>
-        <a href="#video" class="cta-button">Explore Now</a>
-    </div>
+    <section id="home">
+        <h2>Welcome to Your Travel Adventure</h2>
+        <p>Explore the world with our amazing travel packages.</p>
+        <img src="travel-image.jpg" alt="Travel Image">
+        <video width="320" height="240" controls>
+            <source src="travel-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
 
-    <div id="gallery" class="gallery-section">
-        <h2>Featured Destinations</h2>
-        <img class="gallery-image" src="https://source.unsplash.com/800x600/?beach" alt="Beach Destination">
-        <img class="gallery-image" src="https://source.unsplash.com/800x600/?mountains" alt="Mountain Destination">
-        <img class="gallery-image" src="https://source.unsplash.com/800x600/?city" alt="City Destination">
-    </div>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Learn more about our travel company and our mission to provide unforgettable experiences.</p>
+    </section>
 
-    <div id="video" class="video-section">
-        <h2>Watch Our Travel Adventures</h2>
-        <!-- Replace the video URL with your own -->
-        <div id="youtube-video">
-           <iframe width="560" height="315" src="https://www.youtube.com/embed/gCRNEJxDJKM?si=f80VeDwsMIEMhkYu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-    </div>
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>Discover the range of services we offer to make your travel hassle-free.</p>
+        <!-- Add more content like responsive buttons, images, maps, etc. -->
+    </section>
 
-    <div id="map" class="map-section">
-        <h2>Visit Us</h2>
-        <!-- Replace the map embed code with your own -->
-        <div id="google-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1dYOUR_LATITUDE_LONGITUDE!2dYOUR_LONGITUDE!2dYOUR_LATITUDE!3dYOUR_ZOOM_LEVEL!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xYOUR_LATITUDE_LONGITUDE!2sYour%20Location!5e0!3m2!1sen!2sus!4vYOUR_MAP_API_KEY" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </div>
-    </div>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Reach out to us for inquiries, bookings, and more.</p>
+        <!-- Add a contact form or other contact information -->
+    </section>
 
     <footer>
-        <p>&copy; 2023 Your Travel Escape</p>
+        <p>&copy; 2023 Your Travel Company. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
